@@ -1,5 +1,4 @@
 // gcc -Iincludes src/sequencial.c src/funcoes.c -o codigo_sequencial
-// gcc -o codigo_sequencial src/sequencial.c
 // ./codigo_sequencial testes/entradas/ex_minusculo.txt testes/saidas/sequencial/sequencial_minusculo.txt
 
 #include <stdio.h>
