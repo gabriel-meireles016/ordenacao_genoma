@@ -3,6 +3,7 @@
 #include <string.h>
 #include <time.h>
 #include "../include/funcoes.h"
+#define MAX_SEQ_LENGTH 100
 
 char** ler_arquivo(char* nome_arquivo, int* total_seqs){
 
@@ -85,6 +86,12 @@ void generate_dna_sequence(char* seq, int length) {
 
 int compare_dna(const void* a, const void* b) {
     return strcmp(*(char**)a, *(char**)b);
+}
+
+void swap_dna(char **a, char **b) {
+    char *temp = *a;
+    *a = *b;
+    *b = temp;
 }
 
 void sequential_sort(char** data, int n) {
